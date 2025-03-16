@@ -82,6 +82,10 @@ const MainPage = () => {
               />
             </div>
 
+            <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              Get the target Currency
+            </button>
+
           </form>
         </section>
       </div>
