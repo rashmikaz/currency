@@ -1,6 +1,15 @@
-import React from 'react'
+import { useState } from "react"
+
 
 const MainPage = () => {
+
+const [date,setDate] = useState(null);
+const [sourceCurrency,setSourceCurrency] = useState("");
+const [targetCurrency,setTargetCurrency] = useState("");
+const [amountInSourceCurrency,setamountInSourceCurrency] = useState(0);
+const [amountInTargetCurrency,setamountInTargetCurrency] = useState(0);
+
+
   return (
     <div>
       <h1 className="lg:mx-32  text-5xl font-black flex items-center justify-normal text-green-500">
@@ -20,6 +29,7 @@ const MainPage = () => {
               <label
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 htmlFor="date"
+                
               >
                 Date
               </label>
