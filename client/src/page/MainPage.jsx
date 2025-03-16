@@ -13,8 +13,8 @@ const MainPage = () => {
         the value of your money in different currencies, this tool is here to
         help.
       </p>
-      <div>
-        <section>
+      <div className=" mt-5 flex items-center justify-center flex-col">
+        <section className="w-full lg:w-1/2">
           <form>
           <div className="mb-4">
               <label
@@ -30,6 +30,25 @@ const MainPage = () => {
                 
               />
             </div>
+
+            <div className="mb-4">
+              <label
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                htmlFor="sourceCurrency"
+              >
+                Source Currency
+              </label>
+
+              <select
+                className=" bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                name="sourceCurrency"
+                id=""
+              >
+                <option value="">Select source currency</option>{" "}
+           
+              </select>
+            </div>
+
           </form>
         </section>
       </div>
