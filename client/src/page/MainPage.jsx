@@ -48,7 +48,7 @@ const MainPage = () => {
 
   return (
     <div>
-      <h1 className="lg:mx-32 text-5xl font-black flex items-center justify-normal text-green-500">
+      <h1 className="lg:mx-32 text-5xl font-black flex items-center justify-normal text-green-500 relative left-30">
         Convert Your Currencies Today
       </h1>
       <p className="lg:mx-32 font-sm opacity-40 py-6">
