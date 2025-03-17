@@ -11,7 +11,7 @@ const MainPage = () => {
   const [amountInSourceCurrency,setamountInSourceCurrency] = useState(0);
   // const [amountInTargetCurrency,setamountInTargetCurrency] = useState(0);
   const [currencyNames, setcurrencyNames] = useState([]);
-  
+
   const handleSubmit = (e)=>{
     e.preventDefault();
     console.log(
@@ -91,6 +91,11 @@ useEffect(() => {
               id="sourceCurrency"
             >
               <option value="">Select source currency</option>{" "}
+              {Object.keys(currencyNames).map((currency) => (
+                  <option className=" p-1" key={currency} value={currency}>
+                    {currencyNames[currency]}
+                  </option>
+                ))}
               
             </select>
           </div>
