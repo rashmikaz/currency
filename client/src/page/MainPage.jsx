@@ -22,7 +22,7 @@ const MainPage = () => {
     ); 
   }
 
-//get all the currencies names
+//get all the currencies names-request
 useEffect(() => {
   const getTheCurrencies = async () => {
     try {
@@ -117,6 +117,11 @@ useEffect(() => {
               id="sourceCurrency"
             >
               <option value="">Select target currency</option>{" "}
+              {Object.keys(currencyNames).map((currency) => (
+                  <option className=" p-1" key={currency} value={currency}>
+                    {currencyNames[currency]}
+                  </option>
+                ))}
               
             </select>
           </div>
