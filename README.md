@@ -13,4 +13,6 @@ I'm excited to share my latest project—a Currency Converter Web App that allow
 ✨ API: Open Exchange Rates
 ✨ Hosting: (Optional - Mention if hosted on Vercel, Netlify, or another platform)
 
+backend - https://github.com/rashmikaz/currency-backend
+
 <img width="1470" alt="Screenshot 2025-03-17 at 7 05 42 PM" src="https://github.com/user-attachments/assets/246e02aa-7c6b-41b8-a197-ccbf55cd4354" />
